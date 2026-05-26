@@ -1,0 +1,12 @@
+__pycache__/
+Temp_Data/
+BigQuery_Credential.json
+*.pyc
+BKE/
+PGP/
+EMP/
+ASP/
+AIP/
+BIP/
+BMA/
+BU2/

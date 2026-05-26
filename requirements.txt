@@ -1,0 +1,4 @@
+paramiko
+pandas
+google-cloud-bigquery
+requests
