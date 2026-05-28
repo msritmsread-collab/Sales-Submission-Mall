@@ -11,7 +11,7 @@ warnings.filterwarnings('ignore')
 
 os.makedirs("Temp_Data", exist_ok=True)
 if not os.path.exists(f"Temp_Data/data_{req.gen_dic['start']}_{req.gen_dic['end']}.csv"):
-    BigQuery = extract_BQ.BigQueryHandler(req.path+"\BigQuery_Credential.json")
+    BigQuery = extract_BQ.BigQueryHandler(os.path.join(req.path,"BigQuery_Credential.json"))
     df = BigQuery.run_query(f"""
                             SELECT CAST(datetime AS STRING) AS datetime, date, CAST(order_number AS STRING) AS order_number, CAST(net_quantity AS STRING) AS net_quantity, net_sales, location
                             FROM msr-msia-sales-analysis.Report_MSREAD.order_MY
