@@ -75,9 +75,7 @@ class transform():
       final = self.by_day()
       os.chdir(self.output_path)
 
-      existing = len(os.listdir(os.getcwd()))
-      if files == None: files = existing
-      else: files = files + existing
+      if files == None: files = len(os.listdir(os.getcwd()))
 
       for i,j in zip(range(files,final["final"].count()+files),final["final"]):
         self.file_name = self.document_type+self.machine_id+"."+str(i).zfill(3)+".txt"

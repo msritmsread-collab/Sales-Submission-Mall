@@ -22,7 +22,7 @@ all_outlet = {
     "location":"BKE",
     "machine_id":"7500218",
     "document_type":"D",
-    "file_start":796,
+    "file_start":797 + (yesterday - dt.date(2026,5,26)).days,
     "output_path":f"{path}/BKE",
     "sftp_client":{
         "hostname":'isendit.capitaland.com',
@@ -38,7 +38,7 @@ all_outlet = {
     "location":"PGP",
     "machine_id":"7000729",
     "document_type":"D",
-    "file_start":736,
+    "file_start":737 + (yesterday - dt.date(2026,5,26)).days,
     "output_path":f"{path}/PGP",
     "sftp_client":{
         "hostname":'20.195.109.4',
@@ -127,7 +127,7 @@ all_outlet = {
     "location":"BMA",
     "machine_id":"7800003",
     "document_type":"D",
-    "file_start":700,
+    "file_start":701 + (yesterday - dt.date(2026,5,26)).days,
     "output_path":f"{path}/BMA",
     "sftp_client":{
         "hostname":'20.195.109.4',
