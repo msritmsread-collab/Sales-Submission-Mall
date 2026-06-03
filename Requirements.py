@@ -8,11 +8,11 @@ List_to_run = ['BKE','BIP','PGP','EMP','BU2','BMA'] # ['BMA']#'PGP','ASP','EMP'
 
 gen_dic = {
     "start" :
-                # '2026-05-07'
-                f'{yesterday}'
+                '2026-05-29'
+                #f'{yesterday}'
     ,"end"  :
-                # '2026-05-07'
-                f'{yesterday}'
+                '2026-05-29'
+                #f'{yesterday}'
 }
 
 # sftp://
